@@ -278,50 +278,70 @@ window.closeExperienceModal = function () {
 ========================= */
 
 document.addEventListener("DOMContentLoaded", () => {
-  const modal = document.getElementById("certModal");
-  const modalImg = document.getElementById("certModalImg");
-  const closeBtn = document.querySelector(".cert-close");
+    const modal = document.getElementById("certModal");
+    const modalImg = document.getElementById("certModalImg");
+    const closeBtn = document.querySelector(".cert-close");
 
-  if (!modal || !modalImg) return;
+    if (!modal || !modalImg) return;
 
-  document.querySelectorAll(".cert-card").forEach(card => {
-    card.addEventListener("click", () => {
-      const imgSrc = card.getAttribute("data-image");
-      if (!imgSrc) return;
+    document.querySelectorAll(".cert-card").forEach(card => {
+        card.addEventListener("click", () => {
+            const imgSrc = card.getAttribute("data-image");
+            if (!imgSrc) return;
 
-      modalImg.src = imgSrc;
-      modal.style.display = "flex";
-      document.body.style.overflow = "hidden";
+            modalImg.src = imgSrc;
+            modal.style.display = "flex";
+            document.body.style.overflow = "hidden";
+        });
     });
-  });
 
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-    modalImg.src = "";
-    document.body.style.overflow = "auto";
-  });
+    closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+        modalImg.src = "";
+        document.body.style.overflow = "auto";
+    });
 
-  modal.addEventListener("click", e => {
-    if (e.target === modal) {
-      modal.style.display = "none";
-      modalImg.src = "";
-      document.body.style.overflow = "auto";
-    }
-  });
+    modal.addEventListener("click", e => {
+        if (e.target === modal) {
+            modal.style.display = "none";
+            modalImg.src = "";
+            document.body.style.overflow = "auto";
+        }
+    });
 });
 
 let submitted = false;
 
 function closePopup() {
-  document.getElementById("successPopup").style.display = "none";
+    document.getElementById("successPopup").style.display = "none";
 }
 
 document.querySelector(".contact-form").addEventListener("submit", () => {
-  submitted = true;
+    submitted = true;
 
-  setTimeout(() => {
-    document.getElementById("successPopup").style.display = "flex";
-    document.querySelector(".contact-form").reset();
-  }, 800); // thoda delay for submit
+    setTimeout(() => {
+        document.getElementById("successPopup").style.display = "flex";
+        document.querySelector(".contact-form").reset();
+    }, 800); // thoda delay for submit
+});
+
+// Mobile Menu Toggle
+document.addEventListener("DOMContentLoaded", () => {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+
+    if (mobileMenu && navLinks) {
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        const links = navLinks.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    }
 });
 
