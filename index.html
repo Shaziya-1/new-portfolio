@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sajiya Shaikh | Software Engineer & UI/UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="particles" id="preloader-particles"></div>
+    <div class="preloader-symbol-wrapper">
+      <div class="preloader-symbol">&lt;/S&gt;</div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar glass-panel">
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Internship</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Social Sidebar -->
+  <aside class="social-sidebar">
+    <a href="https://github.com/Shaziya-1" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/shaziya-shaikh-32401827b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.instagram.com/shaikh_shaziya_05/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  </aside>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-background" id="hero-bg">
+      <div class="golden-orb" id="golden-orb"></div>
+      <div class="star-particles" id="star-particles"></div>
+    </div>
+    <div class="hero-content glass-panel" id="hero-card">
+      <h1 class="hero-title">Hi, I'm Sajiya Shaikh</h1>
+      <h2 class="hero-subtitle">Software Engineer | UI/UX Designer</h2>
+    </div>
+  </section>
+
+  <!-- Education Timeline -->
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="timeline-container">
+      <div class="timeline-line">
+        <div class="timeline-line-progress" id="timeline-progress"></div>
+      </div>
+
+      <div class="timeline-item left timeline-edu">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-panel">
+          <h3>B.Tech Computer Engineering</h3>
+          <h4>2024–2027</h4>
+          <p class="text-gold">SGPA: 9.88</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right timeline-edu">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-panel">
+          <h3>Diploma in IT Engineering</h3>
+          <h4>2021–2024</h4>
+          <p class="text-gold">95.08%</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left timeline-edu">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-panel">
+          <h3>SSC</h3>
+          <h4>2020–2021</h4>
+          <p class="text-gold">89%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills -->
+  <section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-container">
+
+      <!-- Cluster 1 -->
+      <div class="skill-cluster glass-panel">
+        <h3>Frontend & Web</h3>
+        <div class="orbit-container">
+          <div class="orbit-center"><i class="fas fa-code"></i></div>
+          <div class="orbit-item" data-angle="0">HTML</div>
+          <div class="orbit-item" data-angle="51">CSS</div>
+          <div class="orbit-item" data-angle="102">JS</div>
+          <div class="orbit-item" data-angle="153">React</div>
+          <div class="orbit-item" data-angle="204">TW</div>
+          <div class="orbit-item" data-angle="255">PHP</div>
+          <div class="orbit-item" data-angle="306">API</div>
+        </div>
+      </div>
+
+      <!-- Cluster 2 -->
+      <div class="skill-cluster glass-panel">
+        <h3>Backend & DB</h3>
+        <div class="orbit-container">
+          <div class="orbit-center"><i class="fas fa-server"></i></div>
+          <div class="orbit-item" data-angle="0">Java</div>
+          <div class="orbit-item" data-angle="36">Py</div>
+          <div class="orbit-item" data-angle="72">C</div>
+          <div class="orbit-item" data-angle="108">C++</div>
+          <div class="orbit-item" data-angle="144">C#</div>
+          <div class="orbit-item" data-angle="180">Django</div>
+          <div class="orbit-item" data-angle="216">Node</div>
+          <div class="orbit-item" data-angle="252">MySQL</div>
+          <div class="orbit-item" data-angle="288">Mongo</div>
+          <div class="orbit-item" data-angle="324">DBMS</div>
+        </div>
+      </div>
+
+      <!-- Cluster 3 -->
+      <div class="skill-cluster glass-panel">
+        <h3>Design & Tools</h3>
+        <div class="orbit-container">
+          <div class="orbit-center"><i class="fas fa-pen-nib"></i></div>
+          <div class="orbit-item" data-angle="0">Figma</div>
+          <div class="orbit-item" data-angle="45">UI/UX</div>
+          <div class="orbit-item" data-angle="90">Excel</div>
+          <div class="orbit-item" data-angle="135">Tableau</div>
+          <div class="orbit-item" data-angle="180">Git</div>
+          <div class="orbit-item" data-angle="225">GitHub</div>
+          <div class="orbit-item" data-angle="270">Vite</div>
+          <div class="orbit-item" data-angle="315">Anim</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Experience Timeline -->
+  <section id="experience">
+    <h2 class="section-title">Internship & Experience</h2>
+    <div class="experience-grid">
+      <!-- Top 3 -->
+      <div class="experience-card glass-panel"
+        onclick="openExperienceModal('Techgyan', 'Full Stack Java Developer', 'Developed robust backend APIs and integrated React frontends for enterprise applications.')">
+        <div class="exp-icon"><i class="fas fa-laptop-code"></i></div>
+        <h3>Full Stack Java Developer</h3>
+        <h4>Techgyan Technologies</h4>
+        <p class="click-hint">Tap to view details <i class="fas fa-arrow-right"></i></p>
+      </div>
+
+      <div class="experience-card glass-panel"
+        onclick="openExperienceModal('Oasis', 'Web Development Intern', 'Built responsive landing pages and interactive web tools focusing on UI/UX best practices.')">
+        <div class="exp-icon"><i class="fas fa-globe"></i></div>
+        <h3>Web Development Intern</h3>
+        <h4>Oasis InfoByte</h4>
+        <p class="click-hint">Tap to view details <i class="fas fa-arrow-right"></i></p>
+      </div>
+
+      <div class="experience-card glass-panel"
+        onclick="openExperienceModal('Secure', 'Cybersecurity Internship', 'Conducted vulnerability assessments and implemented security protocols for web applications.')">
+        <div class="exp-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Cybersecurity Intern</h3>
+        <h4>Secure Cyber Future</h4>
+        <p class="click-hint">Tap to view details <i class="fas fa-arrow-right"></i></p>
+      </div>
+
+      <!-- Bottom 3 -->
+      <div class="experience-card glass-panel"
+        onclick="openExperienceModal('MESCO', 'Social Service Intern', 'Volunteered to build technical literacy programs and design community outreach materials.')">
+        <div class="exp-icon"><i class="fas fa-hands-helping"></i></div>
+        <h3>Social Service Intern</h3>
+        <h4>MESCO</h4>
+        <p class="click-hint">Tap to view details <i class="fas fa-arrow-right"></i></p>
+      </div>
+
+      <div class="experience-card glass-panel"
+        onclick="openExperienceModal('Naviotech', 'Python / ML Training', 'Completed intensive training in Python, data analysis, and predictive machine learning models.')">
+        <div class="exp-icon"><i class="fas fa-brain"></i></div>
+        <h3>Python / ML Intern</h3>
+        <h4>Naviotech</h4>
+        <p class="click-hint">Tap to view details <i class="fas fa-arrow-right"></i></p>
+      </div>
+
+      <div class="experience-card glass-panel"
+        onclick="openExperienceModal('L&T', 'Full Stack Training', 'Comprehensive full-stack development bootcamp covering modern frameworks and database management.')">
+        <div class="exp-icon"><i class="fas fa-hard-hat"></i></div>
+        <h3>Full Stack Training</h3>
+        <h4>L&T Skill Trainers Academy</h4>
+        <p class="click-hint">Tap to view details <i class="fas fa-arrow-right"></i></p>
+      </div>
+    </div>
+  </section> 
+
+  <!-- Projects -->
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-grid">
+
+    <div class="project-card glass-panel">
+      <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800"
+        alt="CyberPhish AI" class="project-image">
+      <div class="project-overlay">
+        <h3>CyberPhish AI</h3>
+        <p>AI-powered phishing detection & threat analysis system</p>
+        <a href="https://github.com/Shaziya-1/PhishViz" target="_blank" class="gold-btn mt-10">
+          Source Code
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card glass-panel">
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
+        alt="Cyber Bullying Detection" class="project-image">
+      <div class="project-overlay">
+        <h3>Cyber Bullying Detection</h3>
+        <p>ML-based system to detect toxic behavior using NLP</p>
+        <a href="https://github.com/Shaziya-1/Cyber-Bullying-Detection-System" target="_blank" class="gold-btn mt-10">
+          Source Code
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card glass-panel">
+<img src="images/plagiarism3.jpg" alt="Plagiarism Detection" class="project-image"> 
+      <div class="project-overlay">
+        <h3>Plagiarism Detection</h3>
+        <p>NLP-based document comparison tool</p>
+        <a href="https://github.com/Shaziya-1/Plagiarism-Checker" target="_blank" class="gold-btn mt-10">
+          Source Code
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card glass-panel">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800"
+        alt="Scan & Order Website" class="project-image">
+      <div class="project-overlay">
+        <h3>Scan & Order Website</h3>
+        <p>QR-based ordering system for cafes & restaurants</p>
+        <a href="https://github.com/Tamannshaikh/MenuMatic-Scan-and-order-food-website-" target="_blank" class="gold-btn mt-10">
+          Source Code
+        </a>
+      </div>
+    </div>
+
+   <div class="project-card glass-panel">
+  <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800"
+    alt="Big Bazaar Sales Prediction" class="project-image">
+  <div class="project-overlay">
+    <h3>Big Bazaar Sales Prediction</h3>
+    <p>ML-based sales forecasting with dashboards</p>
+    <a href="https://github.com/Shaziya-1/big-bazaar-sales-prediction" target="_blank" class="gold-btn mt-10">
+      Source Code
+    </a>
+  </div>
+</div>
+
+<div class="project-card glass-panel">
+  
+<img src="images/smart-health.jpg" class="project-image">
+  
+  <div class="project-overlay">
+    <h3>Smart Health Prediction</h3>
+    <p>AI-based system for smart health risk prediction</p>
+    <a href="https://github.com/Shaziya-1/smart-health-prediction" target="_blank" class="gold-btn mt-10">
+      Source Code
+    </a>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<!-- Certifications -->
+<section id="certifications">
+  <h2 class="section-title">Certifications</h2>
+
+  <div class="cert-slider">
+    <div class="cert-track">
+
+      <div class="cert-card glass-panel" data-image="images/certs/oasis.jpg">
+        Oasis InfoByte
+      </div>
+
+      <div class="cert-card glass-panel" data-image="images/certs/niit.jpg">
+        NIIT Basic IT
+      </div>
+
+      <div class="cert-card glass-panel" data-image="images/certs/lt.jpg">
+        L&amp;T Skill Trainers Academy
+      </div>
+
+      <div class="cert-card glass-panel" data-image="images/certs/techgyan.jpg">
+        Techgyan Technologies
+      </div>
+
+      <div class="cert-card glass-panel" data-image="images/certs/modern.jpg">
+        Modern Solutions Hub
+      </div>
+
+      <div class="cert-card glass-panel" data-image="images/certs/Machinelearning.jpg">
+        Machine Learning
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Certificate Modal (REQUIRED) -->
+<div id="certModal" class="cert-modal">
+  <span class="cert-close">&times;</span>
+  <img id="certModalImg" alt="Certificate Image">
+</div>
+    
+<!-- About Me -->
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+
+  <div class="about-grid">
+
+    <!-- Image -->
+    <div
+      class="about-image glass-panel"
+      style="display: flex; justify-content: center; padding: 20px;"
+    >
+      <!-- ✅ FIXED IMAGE PATH -->
+<img
+  src="images/Sajiya.jpg"
+  alt="Sajiya Shaikh"
+  class="portrait-img"
+/>    </div>
+
+    <!-- Text -->
+    <div class="about-text glass-panel">
+      <p class="reveal-text">
+        I am a passionate Software Engineer and UI/UX Designer aiming to bridge
+        the gap between elegant design and robust architecture.
+      </p>
+
+      <p class="reveal-text">
+        With a keen eye for aesthetics and a deep understanding of modern web
+        technologies, I craft immersive digital experiences.
+      </p>
+
+      <p class="reveal-text">
+        My approach blends creative vision with technical precision, ensuring
+        that every project not only looks stunning but performs flawlessly under
+        pressure.
+      </p>
+
+      <!-- Resume Button -->
+      <a
+        href="https://drive.google.com/file/d/1hCCe7ee5HlfpooZ6rf3qHcp2qgb2r9qI/view?usp=sharing"
+        target="_blank"
+        class="gold-btn btn-resume"
+        rel="noreferrer"
+      >
+        Download Resume
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+
+  <div class="contact-container">
+    <form
+      class="contact-form glass-panel"
+      action="https://docs.google.com/forms/d/e/1FAIpQLSfqH38iIJUtaCG2k9786B5zal8O3uvy7_UHhw3idkgdcCv9jw/formResponse"
+      method="POST"
+      target="hidden_iframe"
+      onsubmit="submitted=true;"
+    >
+
+      <!-- Name -->
+      <input
+        type="text"
+        name="entry.1255083514"
+        placeholder="Your Name"
+        required
+      >
+
+      <!-- Email -->
+      <input
+        type="email"
+        name="entry.1883215799"
+        placeholder="Your Email"
+        required
+      >
+
+      <!-- Message -->
+      <textarea
+        rows="5"
+        name="entry.489990138"
+        placeholder="Your Message"
+        required
+      ></textarea>
+
+      <!-- Submit -->
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Hidden iframe (no redirect) -->
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+  </div>
+</section>
+
+<!-- Success Popup -->
+<div id="successPopup" class="success-popup">
+  <div class="success-box">
+    <h3>✅ Message Sent!</h3>
+    <p>Thank you for contacting me. I’ll get back to you soon.</p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h3>Sajiya Shaikh</h3>
+      <p>📞 7710850302 &nbsp;|&nbsp; 📧 <a href="mailto:shaikhshaziyashaziya6@gmail.com"
+          class="text-gold">shaikhshaziyashaziya6@gmail.com</a></p>
+      <p>🔗 <a href="https://www.linkedin.com/in/shaziya-shaikh-32401827b/" target="_blank"
+          class="text-gold">linkedin.com/in/shaikh-shaziya-shahid</a> &nbsp;|&nbsp; 🐙 <a
+          href="https://github.com/Shaziya-1" target="_blank" class="text-gold">github.com/Shaziya-1</a></p>
+    </div>
+  </footer>
+
+  <!-- Experience Modal -->
+  <div class="modal-overlay" id="exp-modal" onclick="closeExperienceModal()">
+    <div class="modal-content glass-panel" onclick="event.stopPropagation()">
+      <button class="close-btn" onclick="closeExperienceModal()"><i class="fas fa-times"></i></button>
+      <div class="modal-icon" id="modal-icon"></div>
+      <h3 id="modal-title"></h3>
+      <h4 id="modal-company" class="text-gold"></h4>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+
+  <!-- GSAP Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
